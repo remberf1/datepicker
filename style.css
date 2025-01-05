@@ -1,0 +1,74 @@
+.format-box{
+    display: flex;
+    outline: auto;
+    padding-left: 20px;
+    font-size: 30px;
+    margin: 10px;
+    align-items: center;
+}
+.format{
+    flex: auto;
+}
+.calendar-icon{
+    position: relative;
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.calendar-icon ::before{
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    border: 1px solid black;
+}
+svg{
+    fill: black;
+    scale: 2.5;
+}
+.calendar-box{
+    outline: auto;
+}
+.month-box{
+    outline: auto; 
+    display: flex;
+}
+.month{
+    text-align: center;
+    flex: 1;
+}
+.prev::before {
+    content: '❮';
+  }
+  
+  .next::before {
+    content: '❯';
+  }
+  .prev,
+  .next {
+      cursor: pointer;
+      padding: 16px;
+      color: black;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    
+    .next {
+
+    }
+.container{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto;
+}
+.weekday{
+    outline: none !important;
+    border: none !important;
+    background-color: brown;
+}
+
+.container > div{
+    padding: 5px;
+    text-align: center;
+    border:1px solid black;
+}
